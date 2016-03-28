@@ -70,13 +70,14 @@
 - (void) addTableView
 {
     _sectionTitles=[NSMutableArray new];
-    _tableShow=[[UITableView alloc]initWithFrame:CGRectMake(0, 64, mainWidth, mainHeigth)];
+    _tableShow=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, mainWidth, mainHeigth)];
     _tableShow.delegate=self;
     _tableShow.dataSource=self;
     [self.view addSubview:_tableShow];
     _tableShow.sectionIndexBackgroundColor=[UIColor clearColor];
     _tableShow.sectionIndexColor = [UIColor blackColor];
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
